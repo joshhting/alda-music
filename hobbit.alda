@@ -4,8 +4,8 @@
 (quant! 100)
 
 piano:
-	V1: (volume 100) (tempo 100) d f/c | (tempo 120) g2./<b > b4 | c/>c d8 c < b4 a | g2./<b > c4
-	V2: (volume 70) (tempo 100) r2 | (tempo 120) << g8 > d g a g d8~4 | <f8> c4. g8 c <a> c | <g> d g a b d8~8 d8
+	V1: (volume 100) (tempo 100) d f/c | (tempo 110) g2./<b > b4 | (tempo 120) c/>c d8 c < b4 a | g2./<b > c4
+	V2: (volume 70) (tempo 100) r2 | (tempo 110) << g8 > d g a g d8~4 | (tempo 120) <f8> c4. g8 c <a> c | <g> d g a b d8~8 d8
 
 	V1: d f/<f g/>d/g | a/f/c/<a r a/>c/f g/b | g/>c < b8/d a/c | g2/<b > d4 c8 < b
 	V2: o2 [g8 > d <]*3 | f > c g a4 f4. | < g8 > g8~4 | < g8 > d g b4 d4.
