@@ -6,38 +6,40 @@
 (tempo! 132)
 
 midi-square-lead "square-1": (volume 100) (quant 100)
-	#o4 a > d4. < a2~8 | b-4. a f4 | g4. a2~8 | f4. g e4 | d4. a2~8 | g4. a f4 | b4. a2~8 | g4. a f4
+	o4 a > d4. < a2~8 | b-4. a f4 | g4. a2~8 | f4. g e4 | d4. a2~8 | g4. a f4 | b4. a2~8 | g4. a f4
 	# disagree with tempo 111 here
-	#o4 (volume 60)  d16 d f d a d f g d d g d a d > c d | < d d f d a d f g [a f]*4 | d16 d f d a d f g d d g d a d > c d | < g g b g > c < g > c d g d < g > g c4
-	#o4 [>c16/<f]*5 r [>c/<f]*2 [a/f]*3 r r [g/f]*3 | [g/e]*5 r [g/e]*3 r [g/e]*6 | [>c16/<f]*5 r [>c/<f]*2 [a/f]*3 r r [g/f]*3 | [b/g]*5 r b/g b/g a/g r [a/g]*6
-	#o4 [>d16/<a]*5 r a/>d f/d [g/e]*3 r r [g/e]*3 | [g/e]*5 r [g/e]*2 g/c r g/c g/c r r g/c g/c | [a/e]*5 r a/e a/e [g/e]*3 r r [a/e]*3 | [a/e]*5 r a/e a/e g/e r g/e g/e r r a/e e/>c
-	#o4 [>d16/<a]*5 r a/>d f/d [g/e]*3 r r [g/e]*3 | [g/e]*5 r [g/e]*2 g/c r g/c g/c r r g/c g/c | [a/e]*5 r a/e a/e [g/e]*3 r r [a/e]*3 | [a/e]*5 r a/e a/e [e/g]*8
-	#%percussion
-	#(tempo 125) (volume 100)
-	#o4 d4 c16 d16 a4. g16 a8. | g4 f8 e4. f4 | e f8 d2 r8 | g a4 > c4. < a4 | > d2~8. c16 d8 e | c2. c16 d8. | d1 | < g
-	#(tempo 118) (volume 100)
-	#o4 [d16 d c d f d f g d d g a d a a > c | < [> d/<a]*3 [> c+/<a]*3 [> c/<a]*3 [b_/a]*3 b/a b/a a/d a/d]*2
-	#o5 d4. < a8~2 | b4. a f4 | g4. a8~2 | f4. g e4 | d4. a8~2 | g4. a f4 | b4. a a8 > c < | g4. a f4 | d2. g8 a | g1
-	#(volume 60)
-	#o5 [e16/a]*5 r e/a e/a [e/g]*5 r e/a e/a | [e/a]*5 r e/a e/a e/g r e/g e/g r r a/e e/c
-	#(volume 80)
-	#o4 [a16/d]*5 r a/d d/f [e/g]*3 r r [e/g]*3 | [c/g]*5 r [c/g]*3 r c/g c/g r r e/g e/g
-	#o5 [e16/a]*5 r e/a e/a [e/g]*5 r e/g e/a | [e/a]*5 r e/a e/a e/g r e/g e/g r r e/g e/g
-	#(volume 100)
-	#o4 d4 c16 d a4. g8 a | g4 f8 e4. f4 | e4 f8 d2~8 | g8 a4 > c4. < a4
-	#o5 d2. f8 e | c2~8 < a8 > c16 d8. | d1 | r
-	#o4 [d16 d c d f d f g d d g a d a a > c | < [> d/<a]*3 [> c+/<a]*3 [> c/<a]*3 [b_/a]*3 b/a b/a a/d a/d]*2
+	o4 (volume 60)  d16 d f d a d f g d d g d a d > c d | < d d f d a d f g [a f]*4 | d16 d f d a d f g d d g d a d > c d | < g g b g > c < g > c d g d < g > g c4
+	o4 [>c16/<f]*5 r [>c/<f]*2 [a/f]*3 r r [g/f]*3 | [g/e]*5 r [g/e]*3 r [g/e]*6 | [>c16/<f]*5 r [>c/<f]*2 [a/f]*3 r r [g/f]*3 | [b/g]*5 r b/g b/g a/g r [a/g]*6
+	o4 [>d16/<a]*5 r a/>d f/d [g/e]*3 r r [g/e]*3 | [g/e]*5 r [g/e]*2 g/c r g/c g/c r r g/c g/c | [a/e]*5 r a/e a/e [g/e]*3 r r [a/e]*3 | [a/e]*5 r a/e a/e g/e r g/e g/e r r a/e e/>c
+	o4 [>d16/<a]*5 r a/>d f/d [g/e]*3 r r [g/e]*3 | [g/e]*5 r [g/e]*2 g/c r g/c g/c r r g/c g/c | [a/e]*5 r a/e a/e [g/e]*3 r r [a/e]*3 | [a/e]*5 r a/e a/e [e/g]*8
+	%percussion
+	(tempo 125) (volume 100)
+	o4 d4 c16 d16 a4. g16 a8. | g4 f8 e4. f4 | e f8 d2 r8 | g a4 > c4. < a4 | > d2~8. c16 d8 e | c2. c16 d8. | d1 | < g
+	(tempo 118) (volume 100)
+	o4 [d16 d c d f d f g d d g a d a a > c | < [> d/<a]*3 [> c+/<a]*3 [> c/<a]*3 [b_/a]*3 b/a b/a a/d a/d]*2
+	o5 d4. < a8~2 | b4. a f4 | g4. a8~2 | f4. g e4 | d4. a8~2 | g4. a f4 | b4. a a8 > c < | g4. a f4 | d2. g8 a | g1
+	(volume 60)
+	o5 [e16/a]*5 r e/a e/a [e/g]*5 r e/a e/a | [e/a]*5 r e/a e/a e/g r e/g e/g r r a/e e/c
+	(volume 80)
+	o4 [a16/d]*5 r a/d d/f [e/g]*3 r r [e/g]*3 | [c/g]*5 r [c/g]*3 r c/g c/g r r e/g e/g
+	o5 [e16/a]*5 r e/a e/a [e/g]*5 r e/g e/a | [e/a]*5 r e/a e/a e/g r e/g e/g r r e/g e/g
+	(volume 100)
+	o4 d4 c16 d a4. g8 a | g4 f8 e4. f4 | e4 f8 d2~8 | g8 a4 > c4. < a4
+	o5 d2. f8 e | c2~8 < a8 > c16 d8. | d1 | r
+	o4 [d16 d c d f d f g d d g a d a a > c | < [> d/<a]*3 [> c+/<a]*3 [> c/<a]*3 [b_/a]*3 b/a b/a a/d a/d]*2
+	o5 [(volume 70) a16/d (volume 100) d (volume 70) f/d (volume 100) < a >]*2 a/c c e/c < a > a/c c e c | g/c < g > e/c c g/c c e/c < g > [g/e c e/<g g >]*2	o4 b16/f f > d/<b b > f/d d b/f f > d/<b b > f/d d g/d d b/g g | a c e < a > c < e a c e < a > c < e a c e < a
+	o6 a16/f d f < a > d < f a d a c e < a > c < e a c | >> a/e c e < a > c < e a c > b/g d g < b > g < g > d < b
 
 midi-square-lead "square-2": (volume 80) (quant 70)
-	#V1: o4 d16 a f d [[d f a f]*4 [d f b f]*4]*2 [d f a f]*8 | d f b f d f a f d f b f d f > c < f | d f b f d f a f d f b f d f > d < f
-	#V2: o2 r4 d8 d4 d8 r2 [r1]*3 [d16 d > d < d]*4 [c c > c < c]*4 < [b b > b < b]*4 [g g > g < g]*4
+	V1: o4 d16 a f d [[d f a f]*4 [d f b f]*4]*2 [d f a f]*8 | d f b f d f a f d f b f d f > c < f | d f b f d f a f d f b f d f > d < f
+	V2: o2 r4 d8 d4 d8 r2 [r1]*3 [d16 d > d < d]*4 [c c > c < c]*4 < [b b > b < b]*4 [g g > g < g]*4
 
 	# disagree with tempo 111 here
 
-	#V1: (volume 100) [[o4 [d16 f a >c]*4]*3 | o4 [g b > d f]*4]*3 | [o4 [d16 f a >c]*4]*4
-	#V2: [o1 b16 b b8 b16 b r b8 b16 b r b b r b | > c c c8 c16 c r c8 c16 c r c c r c | d d d8 d16 d r d8 d16 d r d d r d | g g g8 g16 g r g8 g16 g r g g r g]*3
-	#	o2 f16/<b b b8 a/>e f16/<b b8 [b16 b r]*2 b/>b | g/c c c8 < b/>f g16/c c8 [c16 c r]*2 c/>c | < a/d d d8 c16/g r a/d d8 [d16 d r]*2 d/>d | (volume 100) < a4/d c8 d4 c8 d4
-	#V3: r4 [r1]*12 [o3 d16 r2.. < b16 > c r2.. c16 d r2.. d16 g r2.. g16]*2
+	V1: (volume 100) [[o4 [d16 f a >c]*4]*3 | o4 [g b > d f]*4]*3 | [o4 [d16 f a >c]*4]*4
+	V2: [o1 b16 b b8 b16 b r b8 b16 b r b b r b | > c c c8 c16 c r c8 c16 c r c c r c | d d d8 d16 d r d8 d16 d r d d r d | g g g8 g16 g r g8 g16 g r g g r g]*3
+		o2 f16/<b b b8 a/>e f16/<b b8 [b16 b r]*2 b/>b | g/c c c8 < b/>f g16/c c8 [c16 c r]*2 c/>c | < a/d d d8 c16/g r a/d d8 [d16 d r]*2 d/>d | (volume 100) < a4/d c8 d4 c8 d4
+	V3: r4 [r1]*12 [o3 d16 r2.. < b16 > c r2.. c16 d r2.. d16 g r2.. g16]*2
 
 	V1: (tempo 125) (volume 80) o4 [d16 f a >c]*4 | o4 [e g > c d]*3 e g > c < d | o4 [d f a > c]*2 d < f a > c d f a > c | o4 [g b > d f g b > d << f]*2
 	V2: (tempo 125) (volume 80) o2 b8/<b b16 b a8 b > f4 < [b16]*4 | >> c8/<c c16 c b8 c g4 [c16]*4 | > d8/<d d16 d c8 d a4 [d16]*4 | g8/<g g16 g f8 g > d4 < [g16]*4
@@ -79,8 +81,8 @@ midi-square-lead "square-2": (volume 80) (quant 70)
 	V2: o2 d8/<d d16 d c8 d > a < d d16 d8 d16 | d4/>d < c8 d > a [a/d]*3
 
 midi-percussion:
-	#@percussion
+	@percussion
 	(tempo 125)
 	o1 [b_4 > d+ <]*16
 	(tempo 118)
-	o1 [b_4 > d+ <]*64
+	o1 [b_4 > d+ <]*76
