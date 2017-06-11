@@ -4,23 +4,23 @@
 (quant! 100)
 
 piano:
-	V1: (volume 100) (tempo 100) d f/c | (tempo 110) g2./<b > b4 | (tempo 120) c/>c d8 c < b4 a | g2./<b > c4
-	V2: (volume 70) (tempo 100) r2 | (tempo 110) << g8 > d g a g d8~4 | (tempo 120) <f8> c4. g8 c <a> c | <g> d g a b d8~8 d8
+    V1: (volume 100) (tempo 100) d f/c | (tempo 110) g2./<b > b4 | (tempo 120) c/>c d8 c < b4 a | g2./<b > c4
+    V2: (volume 70) (tempo 100) r2 | (tempo 110) << g8 > d g a g d8~4 | (tempo 120) <f8> c4. g8 c <a> c | <g> d g a b d8~8 d8
 
-	V1: d f/<f g/>d/g | a/f/c/<a r a/>c/f g/b | g/>c < b8/d a/c | g2/<b > d4 c8 < b
-	V2: o2 [g8 > d <]*3 | f > c g a4 f4. | < g8 > g8~4 | < g8 > d g b4 d4.
+    V1: d f/<f g/>d/g | a/f/c/<a r a/>c/f g/b | g/>c < b8/d a/c | g2/<b > d4 c8 < b
+    V2: o2 [g8 > d <]*3 | f > c g a4 f4. | < g8 > g8~4 | < g8 > d g b4 d4.
 
-	V1: o3 r4 a/>d d/f d/g | < b/r64 > g4/r64 d8.. (comment arpeggiated chord) g4/d/<b b > g/d/b | > c8/<a b/g a4/f f/c | g/d (volume 85) d d 
-	V2: o3 a8 g d < g f d < g g | g4 > g8. > d16 g8 d < g4 | f4.~16 > c16 f c < a f | g8. > d16 b a g a b8 d8
+    V1: o3 r4 a/>d d/f d/g | < b/r64 > g4/r64 d8.. (comment arpeggiated chord) g4/d/<b b > g/d/b | > c8/<a b/g a4/f f/c | g/d (volume 85) d d 
+    V2: o3 a8 g d < g f d < g g | g4 > g8. > d16 g8 d < g4 | f4.~16 > c16 f c < a f | g8. > d16 b a g a b8 d8
 
-	V1: o4 d4/<b (volume 100) a/>d f/c g/d | a/f/c/<a a/>c/f/a (volume 85) c/<a (volume 100) b/>d/g/b | > c8/<g/e/c b/<b a4/>c/a g/d/<a/g
-	V2: o3 g8 d f <b> f < f d d | f/>f f r f4 c16 a16~8 < g8/<g | > c4. f16 a16~16 > c16 < a > c
+    V1: o4 d4/<b (volume 100) a/>d f/c g/d | a/f/c/<a a/>c/f/a (volume 85) c/<a (volume 100) b/>d/g/b | > c8/<g/e/c b/<b a4/>c/a g/d/<a/g
+    V2: o3 g8 d f <b> f < f d d | f/>f f r f4 c16 a16~8 < g8/<g | > c4. f16 a16~16 > c16 < a > c
 
-	V1: o3 a4/>c/f/a (volume 85) c/<a a/>c (volume 100) c/f | f/>c/f a/f/<a (tempo 110) b/>f/b (tempo 100) a4/f/<a (comment ritardando) | (tempo 120) > d2./g/b/>d
-	V2: o1 f8/>f a16 > c16~16 f16 c f16~16 f16 c f16~16 f16 a > c | r8 c4 g8 (tempo 110) f c (tempo 100) < a f | (tempo 120) < g/<g b16 > d >d< b g d b a g d
+    V1: o3 a4/>c/f/a (volume 85) c/<a a/>c (volume 100) c/f | f/>c/f a/f/<a (tempo 110) b/>f/b (tempo 100) a4/f/<a (comment ritardando) | (tempo 120) > d2./g/b/>d
+    V2: o1 f8/>f a16 > c16~16 f16 c f16~16 f16 c f16~16 f16 a > c | r8 c4 g8 (tempo 110) f c (tempo 100) < a f | (tempo 120) < g/<g b16 > d >d< b g d b a g d
 
-	V1: o4 r4 a/>a b4./d/<b g8/b/>g | < a4/r64 > d4/r64 f4/r64 a8.~64 < d4/<a/f f/a/>d | r d/f/a/>d f/d/<a/f g/b/>d/g
-	V2: o1 g8/>g b > d g a b > d r | o2 d a16 > d16~16 e-16 d e-8 e-16 d e- | d8/<d> f f a a > c < a f
+    V1: o4 r4 a/>a b4./d/<b g8/b/>g | < a4/r64 > d4/r64 f4/r64 a8.~64 < d4/<a/f f/a/>d | r d/f/a/>d f/d/<a/f g/b/>d/g
+    V2: o1 g8/>g b > d g a b > d r | o2 d a16 > d16~16 e-16 d e-8 e-16 d e- | d8/<d> f f a a > c < a f
 
-	V1: o4 a4/r64 > c4/r64 f4/r64 a8.~64 a4/f/c/<a f/c/<a > f/c/<a | a2/>c/f b4./>f/b f8/<a/f | g4/b/d/>g r < b16 a g b > d8 r | b16 a g b > d r8. b16 a g a > g4
-	V2: o1 f8/>f a > c > f16 g [g g f g]*2 | f8/<f> a > c f f c < f4/<f | g > d16 g b > d r4~16 << b16 > c d | r4~16 b16 > c d < d2 # todo: fix measure 3
+    V1: o4 a4/r64 > c4/r64 f4/r64 a8.~64 a4/f/c/<a f/c/<a > f/c/<a | a2/>c/f b4./>f/b f8/<a/f | g4/b/d/>g r < b16 a g b > d8 r | b16 a g b > d r8. b16 a g a > g4
+    V2: o1 f8/>f a > c > f16 g [g g f g]*2 | f8/<f> a > c f f c < f4/<f | g > d16 g b > d r4~16 << b16 > c d | r4~16 b16 > c d < d2 # todo: fix measure 3

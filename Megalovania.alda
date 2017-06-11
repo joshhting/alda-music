@@ -6,54 +6,54 @@
 (tempo! 120)
 
 piano:
-	V1: (volume 100) o4
-		[d16 d > d8 < a8. a-16 r g8 f d16 f g | c c > d8 < a8. a-16 r g8 f d16 f g
-		< b_ b_ >> d8 < a8. a-16 r g8 f d16 f g | < b b >> d8 < a8. a-16 r g8 f d16 f g]*4
-	V2: (volume 70) o3 
-		[r1]*4 d8 d d16 d8 d16 r d8 d16 d d d8 | c8 c c16 c8 c16 r c8 c16 c c c8
-		< b_8 b_ b_16 b_8 b_16 r b_8 b_16 b_ b_ b_8 | b8 b b16 b8 > c16 r c8 c16 c c c8
-	V3: (volume 100) o5 
-		[r1]*8 [d16 d > d8 < a8. a-16 r g8 f d16 f g | c c > d8 < a8. a-16 r g8 f d16 f g
-		< b_ b_ >> d8 < a8. a-16 r g8 f d16 f g | < b b >> d8 < a8. a-16 r g8 f d16 f g]*2
-	V2: (quant! 90)
-		[< d8 > d < d16 d > d < d16~16 d16 > d < d d d > c8 | < c8 > c < c16 c > c < c16~16 c16 > c < c c c > c8
-		< b_8 > b_ < b_16 b_ > b_ < b_16~16 b_16 > b_ < b_ b_ b_ > b_8 | < b8 > b < b16 b > b < c16~16 c16 > c < c c c > c8]*3
-	V1: o5 f8 f16 f r f8 f d d16~4 | f8 f16 f r g8 a- {g a- g}16 f d f g r8 | f f16 f r g8 a-16 r a8 > c < a8. | > d8 d d16 < a > d c16~2
-		o5 a8/f a16/f a/f r a8/f a/f g/d g16~4/d | a8/f a16/f a/f r a8/f g16/d r a8/f > d16/<e r a/d g8/c
-		o6 d/<b_16 g a8/d16 e g8/f16 d f8/<b_16 > d > c8/r16 < d16 g8/<b_16 > d f8/<b_16 g > e8/<b_16 g | b8 > c16 d/<b > r f8/d e16~2/>c
-	V2: o2 d16 d > d8 < a8./d16 d > d < a-/d8 r16 g8/d16 > d < f8/d d16 > d/<f g | c c > d8 < a/c16 c > d < a-/c8 r16 g8/c16 > d < f8/c d16 > d/<f g
-	b_16 b_ > d8 < a8./b_16 b_ > d < a-/b_8 r16 g8/b_16 > d < f8/b_ d16 > d/<f g | b b > d8 < a8./b16 b > d < a-/c8 r16 g8/c16 > d < f8/c d16 > d/<f g
+    V1: (volume 100) o4
+        [d16 d > d8 < a8. a-16 r g8 f d16 f g | c c > d8 < a8. a-16 r g8 f d16 f g
+        < b_ b_ >> d8 < a8. a-16 r g8 f d16 f g | < b b >> d8 < a8. a-16 r g8 f d16 f g]*4
+    V2: (volume 70) o3 
+        [r1]*4 d8 d d16 d8 d16 r d8 d16 d d d8 | c8 c c16 c8 c16 r c8 c16 c c c8
+        < b_8 b_ b_16 b_8 b_16 r b_8 b_16 b_ b_ b_8 | b8 b b16 b8 > c16 r c8 c16 c c c8
+    V3: (volume 100) o5 
+        [r1]*8 [d16 d > d8 < a8. a-16 r g8 f d16 f g | c c > d8 < a8. a-16 r g8 f d16 f g
+        < b_ b_ >> d8 < a8. a-16 r g8 f d16 f g | < b b >> d8 < a8. a-16 r g8 f d16 f g]*2
+    V2: (quant! 90)
+        [< d8 > d < d16 d > d < d16~16 d16 > d < d d d > c8 | < c8 > c < c16 c > c < c16~16 c16 > c < c c c > c8
+        < b_8 > b_ < b_16 b_ > b_ < b_16~16 b_16 > b_ < b_ b_ b_ > b_8 | < b8 > b < b16 b > b < c16~16 c16 > c < c c c > c8]*3
+    V1: o5 f8 f16 f r f8 f d d16~4 | f8 f16 f r g8 a- {g a- g}16 f d f g r8 | f f16 f r g8 a-16 r a8 > c < a8. | > d8 d d16 < a > d c16~2
+        o5 a8/f a16/f a/f r a8/f a/f g/d g16~4/d | a8/f a16/f a/f r a8/f g16/d r a8/f > d16/<e r a/d g8/c
+        o6 d/<b_16 g a8/d16 e g8/f16 d f8/<b_16 > d > c8/r16 < d16 g8/<b_16 > d f8/<b_16 g > e8/<b_16 g | b8 > c16 d/<b > r f8/d e16~2/>c
+    V2: o2 d16 d > d8 < a8./d16 d > d < a-/d8 r16 g8/d16 > d < f8/d d16 > d/<f g | c c > d8 < a/c16 c > d < a-/c8 r16 g8/c16 > d < f8/c d16 > d/<f g
+    b_16 b_ > d8 < a8./b_16 b_ > d < a-/b_8 r16 g8/b_16 > d < f8/b_ d16 > d/<f g | b b > d8 < a8./b16 b > d < a-/c8 r16 g8/c16 > d < f8/c d16 > d/<f g
 
-	V1: (quant! 80) [o5 r2 f16/d d/<b > f/d g/e a-/f g/e f/d d/<b | > a-32 g f d f8/d g2~16/e a-8 a16
-		> c8 < a16 a- g f d e f8 g a > c | d- < a- a-16 g f g16~2
-		o4 f8/d g/d a/f > f/d e4/c d/<a | g/>e f/<e > g/c e/<a > | a2/d a16 a- g g- f e e- d | d-2/<a- b/>e-]*2
-	V2: [o1 b8 > b < b16 b > b < b8 b16 > b < b b b > b8 | c8 > c < c16 c > c < c8 c16 > c < c c c > c8
-		< d8 > d < d16 d > d < d8 d16 > d < d d d > d8 | < d-8 > d- < d-16 d- > d- < e-8 e-16 > e- < e- e- e- > e-8]*4
+    V1: (quant! 80) [o5 r2 f16/d d/<b > f/d g/e a-/f g/e f/d d/<b | > a-32 g f d f8/d g2~16/e a-8 a16
+        > c8 < a16 a- g f d e f8 g a > c | d- < a- a-16 g f g16~2
+        o4 f8/d g/d a/f > f/d e4/c d/<a | g/>e f/<e > g/c e/<a > | a2/d a16 a- g g- f e e- d | d-2/<a- b/>e-]*2
+    V2: [o1 b8 > b < b16 b > b < b8 b16 > b < b b b > b8 | c8 > c < c16 c > c < c8 c16 > c < c c c > c8
+        < d8 > d < d16 d > d < d8 d16 > d < d d d > d8 | < d-8 > d- < d-16 d- > d- < e-8 e-16 > e- < e- e- e- > e-8]*4
 
-	V0:
+    V0:
 
-	V1: (quant! 100) o3 b2. > f4 e2 d f1~1 < b2. > f4 e2 d d1~1 | < b2. > f4 | e2 d2 | f1~1 | < b2. > f4 | e2 d2 | d16
-	V2: [o1 b8 b b16 b8 b b b16 b b b8 | > c8 c c16 c8 c c c16 c c c8 <  b_8 b_ b_16 b_8 b_ b_ b_16 b_ b_ b_8 | b_8 b_ b_16 b_8 b_ b_ b_16 b_ b_ b_8
-		b8 b b16 b8 b b b16 b b b8 | > c8 c c16 c8 c c c16 c c c8 d8 d d16 d8 d d d16 d d d8 | d8 d d16 d8 d d d16 d d d8]*2
-	V3: (quant! 50) o3 [r1]*8 d16 d > d8 < a8. a-16 r g8 f d16 f g | c c > d8 < a8. a-16 r g8 f d16 f g | [o2 b_ b_ >> d8 < a8. a-16 r g8 f d16 f g]*2
-		d16 d > d8 < a8. a-16 r g8. f8 d16 f g | c c > d8 < a8. a-16 r g8 f d16 f g
-		(volume 100)
-		[o3 d d > f8/d e8./<a a-16/>c r e8/<g f/>d < g16/d a/f > c/<g]*2
+    V1: (quant! 100) o3 b2. > f4 e2 d f1~1 < b2. > f4 e2 d d1~1 | < b2. > f4 | e2 d2 | f1~1 | < b2. > f4 | e2 d2 | d16
+    V2: [o1 b8 b b16 b8 b b b16 b b b8 | > c8 c c16 c8 c c c16 c c c8 <  b_8 b_ b_16 b_8 b_ b_ b_16 b_ b_ b_8 | b_8 b_ b_16 b_8 b_ b_ b_16 b_ b_ b_8
+        b8 b b16 b8 b b b16 b b b8 | > c8 c c16 c8 c c c16 c c c8 d8 d d16 d8 d d d16 d d d8 | d8 d d16 d8 d d d16 d d d8]*2
+    V3: (quant! 50) o3 [r1]*8 d16 d > d8 < a8. a-16 r g8 f d16 f g | c c > d8 < a8. a-16 r g8 f d16 f g | [o2 b_ b_ >> d8 < a8. a-16 r g8 f d16 f g]*2
+        d16 d > d8 < a8. a-16 r g8. f8 d16 f g | c c > d8 < a8. a-16 r g8 f d16 f g
+        (volume 100)
+        [o3 d d > f8/d e8./<a a-16/>c r e8/<g f/>d < g16/d a/f > c/<g]*2
 
-	V0:
+    V0:
 
-	V1: (quant! 100) o3 b8/f b/f < b16 > b8/f b/f b/f < b16 b b > b8/f | > c/<g > c/<g c16 g8/>c c/<g c/>c < c16 c c g8/>c
-		o4 d/<a > d/<a d16 a8/>d d-/<a- a-/>d- < d-16 d- d- a-8/>d- | c/<g > c/<g c16 g8/>c < b_/f+ b_/f+ < b_16 b_ b_ > b_8/f+
-		o3 b8/f b/f < b16 > b8/f b/f b/f < b16 b b > b8/f | > c/<g > c/<g c16 g8/>c c/<g g/>c < c16 c c g8/>c
-		[o4 d8/<a > d/<a d16 a8/>d d/<a a/>d < d16 d d a8/>d]*2
-		o3 b8/f b/f < b16 > b8/f b/f b/f < b16 b b > b8/f | > c/<g > c/<g c16 g8/>c c/<g c/>c < c16 c c g8/>c
-		o4 d/<a > d/<a d16 a8/>d d-/<a- a-/>d- < d-16 d- d- a-8/>d- | c/<g > c/<g c16 g8/>c < b_/f+ b_/f+ < b_16 b_ b_ > b_8/f+
-		o3 b8/f b/f < b16 > b8/f b/f b/f < b16 b b > b8/f | > c/<g > c/<g c16 g8/>c c/<g g/>c < c16 c c g8/>c
-		(quant! 50) [o4 d8/<d16 d > d8 < a8./r16 > d8 d/<a-16 r16 > d8/<g f d16 > d/<f g]*2
-	V2: [o1 b8 > b < b16 b > b < b8 b16 > b < b b b > b8 | c8 > c < c16 c > c < c8 c16 > c < c c c > c8
-		< d8 > d < d16 d > d < d-8 d-16 > d- < d- d- d- > d-8 | < c8 > c < c16 c > c < b_8 b_16 > b_ < b_ b_ b_ > b_8
-		o1 b8 > b < b16 b > b < b8 b16 > b < b b b > b8 | c8 > c < c16 c > c < c8 c16 > c < c c c > c8
-		< d8 > d < d16 d > d < d-8 d-16 > d- < d- d- d- > d-8 | < d8 > d < d16 d > d < d-8 d-16 > d- < d- d- d- > d-8]*2
+    V1: (quant! 100) o3 b8/f b/f < b16 > b8/f b/f b/f < b16 b b > b8/f | > c/<g > c/<g c16 g8/>c c/<g c/>c < c16 c c g8/>c
+        o4 d/<a > d/<a d16 a8/>d d-/<a- a-/>d- < d-16 d- d- a-8/>d- | c/<g > c/<g c16 g8/>c < b_/f+ b_/f+ < b_16 b_ b_ > b_8/f+
+        o3 b8/f b/f < b16 > b8/f b/f b/f < b16 b b > b8/f | > c/<g > c/<g c16 g8/>c c/<g g/>c < c16 c c g8/>c
+        [o4 d8/<a > d/<a d16 a8/>d d/<a a/>d < d16 d d a8/>d]*2
+        o3 b8/f b/f < b16 > b8/f b/f b/f < b16 b b > b8/f | > c/<g > c/<g c16 g8/>c c/<g c/>c < c16 c c g8/>c
+        o4 d/<a > d/<a d16 a8/>d d-/<a- a-/>d- < d-16 d- d- a-8/>d- | c/<g > c/<g c16 g8/>c < b_/f+ b_/f+ < b_16 b_ b_ > b_8/f+
+        o3 b8/f b/f < b16 > b8/f b/f b/f < b16 b b > b8/f | > c/<g > c/<g c16 g8/>c c/<g g/>c < c16 c c g8/>c
+        (quant! 50) [o4 d8/<d16 d > d8 < a8./r16 > d8 d/<a-16 r16 > d8/<g f d16 > d/<f g]*2
+    V2: [o1 b8 > b < b16 b > b < b8 b16 > b < b b b > b8 | c8 > c < c16 c > c < c8 c16 > c < c c c > c8
+        < d8 > d < d16 d > d < d-8 d-16 > d- < d- d- d- > d-8 | < c8 > c < c16 c > c < b_8 b_16 > b_ < b_ b_ b_ > b_8
+        o1 b8 > b < b16 b > b < b8 b16 > b < b b b > b8 | c8 > c < c16 c > c < c8 c16 > c < c c c > c8
+        < d8 > d < d16 d > d < d-8 d-16 > d- < d- d- d- > d-8 | < d8 > d < d16 d > d < d-8 d-16 > d- < d- d- d- > d-8]*2
 
-	V0: o3 b16 b16 >> d8 < a8. a-16 r16 g8 f d16 f g | c16 c > d8 < a8. a-16 r16 g8 f d16 f g | d16 d > d8 < a8. a-16 r16 g8 f d16 f g
-		d16 d > d8 < a8. a-16 r16 g8 f d16 f g | < b16 b16 >> d8 < a8. a-16 r16 g8 f d16 f g | c16 c > d8 < a8. a-16 r16 g8 f d16 f g
+    V0: o3 b16 b16 >> d8 < a8. a-16 r16 g8 f d16 f g | c16 c > d8 < a8. a-16 r16 g8 f d16 f g | d16 d > d8 < a8. a-16 r16 g8 f d16 f g
+        d16 d > d8 < a8. a-16 r16 g8 f d16 f g | < b16 b16 >> d8 < a8. a-16 r16 g8 f d16 f g | c16 c > d8 < a8. a-16 r16 g8 f d16 f g
