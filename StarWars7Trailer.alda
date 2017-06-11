@@ -1,0 +1,39 @@
+(tempo! 60)
+(quant! 100)
+
+midi-piano "intro":
+    o5 b1 e/a f/a/>c < b/<b/g+/e8 < a > c e g+ b4.
+    o4 g+1/>e/g+/b < a/>e/>c << a1~1/>f1/a e/g+
+    o2 e1/>e/b/>e/g+ o1 a/>a/>>c/e/a o1 f/>f/>a/>c/e/f < b/>e/g+
+    %milleniumfalcon
+
+midi-piano "right": (key-sig [:e :major]) (volume 100)
+    @milleniumfalcon
+    o4 g4/b1/>e/g4 g4./<g f8/>f g/<g b/>b f2./e/c_/<f b4/<b
+    o4 f_4/a/>c_/f_ < f_4./a2./>c_/f_4. e8/<e f_/>f_ a/<a d2/f_/a/>c_/d b8/e/<b g/>g b/<b g/>g
+    %darkside
+    (key-sig [:g :major])
+    o3 e2/b/>e f4./<f g16/>g a/<a > g2/g1/e/<b/g b4./<b b8/>b
+    o3 g4./g1/b/>c/e f8/<f g/>g < b/<b > g12/>g e/<e b/>b a2/e/c+/<a a4/b/>d+/f/a/b b/f/d+/<b
+    o4 e4./e1/g/b/>e f8/<f g8./>g e16/<e b8./>b g16/<g > e2/g/>c/e < e4/<e g12/>g f/<f e/>e
+    o4 e2/g/b e/f/a g/e/<b b4/>d+/f < [b32 > d+ f b]*2
+    o5 c2/e/a/>c d+/<a/f/d+ d+4/f/b/>d+ [d+12/<b/f/d+ >]*3
+    r2~1
+    %end
+    (key-sig [:e :major])
+    o4 e1~1~1/r32 g1.....~1/r32 b1....~1/r32 > e32~1...~1/r32 g1...~1/r32 b16.~1..~1/r32 > e16~1..~1
+
+midi-piano "left": (key-sig [:e :major]) (volume 50)
+    @milleniumfalcon
+    o1 e1/>e/r8 > [e4/g/b/>c <]*3 e8/g/b/>c o2 e1/>e/r8 [e4/g_/>c_/e <]*3 e8/g_/>c_/e <
+    o2 e1/>e/r8 [f_4/a/>c_ <]*3 f_8/a/>c_/f_ o2 e2/>e/r8 f_4/a/>c_ < f_8/a/>c_ o1 [e32 >e <]*8
+    @darkside
+    (key-sig [:g :major])
+    o1 e4/>e e/b/>e < e/<e [e12/>e <]*3 e4/>e e/b/>e < e/<e < [b12/>b <]*3
+    o1 c4/>c c/g/>c < c/<c < [b12/>b <]*3 a4/>a a/>a < b/<b [b12/>b <]*3
+    o1 e4/>e e/b/>e < e/<e [d12/>d <]*3 c4/>c c/g/>c < c/<c [c12/>c <]*3
+    o1 e1/>e b2/>b << [b32 > b <]*8
+    o1 c8/>c c/>c < [c12/<c >]*3 < b8/>b b/>b < [b12/<b >]*9
+    @end
+    (key-sig [:e :major])
+    o4 e2 b a6 g f > e2 < b1
