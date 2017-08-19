@@ -5,84 +5,161 @@
 (key-sig! [:d :minor])
 (tempo! 132)
 
-midi-square-lead "square-1": (volume 100) (quant 100)
-	o4 a > d4. < a2~8 | b-4. a f4 | g4. a2~8 | f4. g e4 | d4. a2~8 | g4. a f4 | b4. a2~8 | g4. a f4
-	# disagree with tempo 111 here
-	o4 (volume 60)  d16 d f d a d f g d d g d a d > c d | < d d f d a d f g [a f]*4 | d16 d f d a d f g d d g d a d > c d | < g g b g > c < g > c d g d < g > g c4
-	o4 [>c16/<f]*5 r [>c/<f]*2 [a/f]*3 r r [g/f]*3 | [g/e]*5 r [g/e]*3 r [g/e]*6 | [>c16/<f]*5 r [>c/<f]*2 [a/f]*3 r r [g/f]*3 | [b/g]*5 r b/g b/g a/g r [a/g]*6
-	o4 [>d16/<a]*5 r a/>d f/d [g/e]*3 r r [g/e]*3 | [g/e]*5 r [g/e]*2 g/c r g/c g/c r r g/c g/c | [a/e]*5 r a/e a/e [g/e]*3 r r [a/e]*3 | [a/e]*5 r a/e a/e g/e r g/e g/e r r a/e e/>c
-	o4 [>d16/<a]*5 r a/>d f/d [g/e]*3 r r [g/e]*3 | [g/e]*5 r [g/e]*2 g/c r g/c g/c r r g/c g/c | [a/e]*5 r a/e a/e [g/e]*3 r r [a/e]*3 | [a/e]*5 r a/e a/e [e/g]*8
-	%percussion
-	(tempo 125) (volume 100)
-	o4 d4 c16 d16 a4. g16 a8. | g4 f8 e4. f4 | e f8 d2 r8 | g a4 > c4. < a4 | > d2~8. c16 d8 e | c2. c16 d8. | d1 | < g
-	(tempo 118) (volume 100)
-	o4 [d16 d c d f d f g d d g a d a a > c | < [> d/<a]*3 [> c+/<a]*3 [> c/<a]*3 [b_/a]*3 b/a b/a a/d a/d]*2
-	o5 d4. < a8~2 | b4. a f4 | g4. a8~2 | f4. g e4 | d4. a8~2 | g4. a f4 | b4. a a8 > c < | g4. a f4 | d2. g8 a | g1
-	(volume 60)
-	o5 [e16/a]*5 r e/a e/a [e/g]*5 r e/a e/a | [e/a]*5 r e/a e/a e/g r e/g e/g r r a/e e/c
-	(volume 80)
-	o4 [a16/d]*5 r a/d d/f [e/g]*3 r r [e/g]*3 | [c/g]*5 r [c/g]*3 r c/g c/g r r e/g e/g
-	o5 [e16/a]*5 r e/a e/a [e/g]*5 r e/g e/a | [e/a]*5 r e/a e/a e/g r e/g e/g r r e/g e/g
-	(volume 100)
-	o4 d4 c16 d a4. g8 a | g4 f8 e4. f4 | e4 f8 d2~8 | g8 a4 > c4. < a4
-	o5 d2. f8 e | c2~8 < a8 > c16 d8. | d1 | r
-	o4 [d16 d c d f d f g d d g a d a a > c | < [> d/<a]*3 [> c+/<a]*3 [> c/<a]*3 [b_/a]*3 b/a b/a a/d a/d]*2
-	o5 [(volume 70) a16/d (volume 100) d (volume 70) f/d (volume 100) < a >]*2 a/c c e/c < a > a/c c e c | g/c < g > e/c c g/c c e/c < g > [g/e c e/<g g >]*2	o4 b16/f f > d/<b b > f/d d b/f f > d/<b b > f/d d g/d d b/g g | a c e < a > c < e a c e < a > c < e a c e < a
-	o6 a16/f d f < a > d < f a d a c e < a > c < e a c | >> a/e c e < a > c < e a c > b/g d g < b > g < g > d < b
+midi-square-lead "square0": (volume 100) (quant 100)
+    o4 a > d4. < a2~8 | b-4. a f4 | g4. a2~8 | f4. g e4 | d4. a2~8 | g4. a f4 | b4. a2~8 | g4. a f4
+    # disagree with tempo 111 here
+    o4 (volume 60)  d16 d f d a d f g d d g d a d > c d | < d d f d a d f g [a f]*4 | d16 d f d a d f g d d g d a d > c d | < g g b g > c < g > c d g d < g > g c4
+    o4 [>c16/<f]*5 r [>c/<f]*2 [a/f]*3 r r [g/f]*3 | [g/e]*5 r [g/e]*3 r [g/e]*6 | [>c16/<f]*5 r [>c/<f]*2 [a/f]*3 r r [g/f]*3 | [b/g]*5 r b/g b/g a/g r [a/g]*6
+    o4 [>d16/<a]*5 r a/>d f/d [g/e]*3 r r [g/e]*3 | [g/e]*5 r [g/e]*2 g/c r g/c g/c r r g/c g/c | [a/e]*5 r a/e a/e [g/e]*3 r r [a/e]*3 | [a/e]*5 r a/e a/e g/e r g/e g/e r r a/e e/>c
+    %percussion
+    o4 [>d16/<a]*5 r a/>d f/d [g/e]*3 r r [g/e]*3 | [g/e]*5 r [g/e]*2 g/c r g/c g/c r r g/c g/c | [a/e]*5 r a/e a/e [g/e]*3 r r [a/e]*3 | [a/e]*5 r a/e a/e [e/g]*8
+    (tempo 125) (volume 100)
+    o4 d4 c16 d16 a4. g16 a8. | g4 f8 e4. f4 | e f8 d2 r8 | g a4 > c4. < a4 | > d2~8. c16 d8 e | c2. c16 d8. | d1 | < g
+    (tempo 118) (volume 100)
+    o4 [d16 d c d f d f g d d g a d a a > c | < [> d/<a]*3 [> c+/<a]*3 [> c/<a]*3 [b_/a]*3 b/a b/a a/d a/d]*2
+    o5 d4. < a8~2 | b4. a f4 | g4. a8~2 | f4. g e4 | d4. a8~2 | g4. a f4 | b4. a a8 > c < | g4. a f4 | d2. g8 a | g1
+    (volume 60)
+    o5 [e16/a]*5 r e/a e/a [e/g]*5 r e/a e/a | [e/a]*5 r e/a e/a e/g r e/g e/g r r a/e e/c
+    (volume 80)
+    o4 [a16/d]*5 r a/d d/f [e/g]*3 r r [e/g]*3 | [c/g]*5 r [c/g]*3 r c/g c/g r r e/g e/g
+    o5 [e16/a]*5 r e/a e/a [e/g]*5 r e/g e/a | [e/a]*5 r e/a e/a e/g r e/g e/g r r e/g e/g
+    (volume 100)
+    o4 d4 c16 d a4. g8 a | g4 f8 e4. f4 | e4 f8 d2~8 | g8 a4 > c4. < a4
+    o5 d2. f8 e | c2~8 < a8 > c16 d8. | d1 | r
+    o4 [d16 d c d f d f g d d g a d a a > c | < [> d/<a]*3 [> c+/<a]*3 [> c/<a]*3 [b_/a]*3 b/a b/a a/d a/d]*2
+    [r1]*6
+    %sawtoothsolostart
 
-midi-square-lead "square-2": (volume 80) (quant 70)
-	V1: o4 d16 a f d [[d f a f]*4 [d f b f]*4]*2 [d f a f]*8 | d f b f d f a f d f b f d f > c < f | d f b f d f a f d f b f d f > d < f
-	V2: o2 r4 d8 d4 d8 r2 [r1]*3 [d16 d > d < d]*4 [c c > c < c]*4 < [b b > b < b]*4 [g g > g < g]*4
+midi-sawtooth "saw0": (volume 60) (quant 70)
+    V1: o4 d16 a f d [[d f a f]*4 [d f b f]*4]*2 [d f a f]*8 | d f b f d f a f d f b f d f > c < f | d f b f d f a f d f b f d f > d < f
+    V2: o2 r4 d8 d4 d8 r2 [r1]*3 [d16 d > d < d]*4 [c c > c < c]*4 < [b b > b < b]*4 [g g > g < g]*4
 
-	# disagree with tempo 111 here
+    # disagree with tempo 111 here
 
-	V1: (volume 100) [[o4 [d16 f a >c]*4]*3 | o4 [g b > d f]*4]*3 | [o4 [d16 f a >c]*4]*4
-	V2: [o1 b16 b b8 b16 b r b8 b16 b r b b r b | > c c c8 c16 c r c8 c16 c r c c r c | d d d8 d16 d r d8 d16 d r d d r d | g g g8 g16 g r g8 g16 g r g g r g]*3
-		o2 f16/<b b b8 a/>e f16/<b b8 [b16 b r]*2 b/>b | g/c c c8 < b/>f g16/c c8 [c16 c r]*2 c/>c | < a/d d d8 c16/g r a/d d8 [d16 d r]*2 d/>d | (volume 100) < a4/d c8 d4 c8 d4
-	V3: r4 [r1]*12 [o3 d16 r2.. < b16 > c r2.. c16 d r2.. d16 g r2.. g16]*2
+    V1: (volume 90) [[o4 [d16 f a >c]*4]*3 | o4 [g b > d f]*3 < g b > d f]*3 | [o4 [d16 f a >c]*4]*4
+    V2: [o1 b16 b b8 b16 b r b8 b16 b r b b r b | > c c c8 c16 c r c8 c16 c r c c r c | d d d8 d16 d r d8 d16 d r d d r d | g g g8 g16 g r g8 g16 g r g g r g]*3
+        o2 f16/<b b b8 a/>e f16/<b b8 [b16 b r]*2 b/>b | g/c c c8 < b/>f g16/c c8 [c16 c r]*2 c/>c | < a/d d d8 c16/g r a/d d8 [d16 d r]*2 d/>d | (volume 100) < a4/d c8 d4 c8 d4
+    V3: r4 [r1]*12 [o3 d16 r2.. < b16 > c r2.. c16 d r2.. d16 g r2.. g16]*2
+    V4: o4 (volume 60)  d16 d f d a d f g d d g d a d > c d | < d d f d a d f g [a f]*4 | d16 d f d a d f g d d g d a d > c d | < g g b g > c < g > c d g d < g > g c4
+    V4: o4 [>c16/<f]*5 r [>c/<f]*2 [a/f]*3 r r [g/f]*3 | [g/e]*5 r [g/e]*3 r [g/e]*6 | [>c16/<f]*5 r [>c/<f]*2 [a/f]*3 r r [g/f]*3 | [b/g]*5 r b/g b/g a/g r [a/g]*6
+    V4: o4 [>d16/<a]*5 r a/>d f/d [g/e]*3 r r [g/e]*3 | [g/e]*5 r [g/e]*2 g/c r g/c g/c r r g/c g/c | [a/e]*5 r a/e a/e [g/e]*3 r r [a/e]*3 | [a/e]*5 r a/e a/e g/e r g/e g/e r r a/e e/>c
+    V4: o4 [>d16/<a]*5 r a/>d f/d [g/e]*3 r r [g/e]*3 | [g/e]*5 r [g/e]*2 g/c r g/c g/c r r g/c g/c | [a/e]*5 r a/e a/e [g/e]*3 r r [a/e]*3 | [a/e]*5 r a/e a/e [e/g]*8
 
-	V1: (tempo 125) (volume 80) o4 [d16 f a >c]*4 | o4 [e g > c d]*3 e g > c < d | o4 [d f a > c]*2 d < f a > c d f a > c | o4 [g b > d f g b > d << f]*2
-	V2: (tempo 125) (volume 80) o2 b8/<b b16 b a8 b > f4 < [b16]*4 | >> c8/<c c16 c b8 c g4 [c16]*4 | > d8/<d d16 d c8 d a4 [d16]*4 | g8/<g g16 g f8 g > d4 < [g16]*4
+    V1: (tempo 125) (volume 80) o4 [d16 f a >c]*4 | o4 [e g > c d]*3 e g > c < d | o4 [d f a > c]*2 d < f a > c d f a > c | o4 [g b > d f g b > d << f]*2
+    V2: (tempo 125) (volume 80) o2 b8/<b b16 b a8 b > f4 < [b16]*4 | >> c8/<c c16 c b8 c g4 [c16]*4 | > d8/<d d16 d c8 d a4 [d16]*4 | g8/<g g16 g f8 g > d4 < [g16]*4
 
-	V1: o4 [d16 f a >c]*4 | o4 [e g > c d]*3 e g > c < d | [o4 [d f a > c]*2 d < f a > c d f a > c]*2
-	V2: o2 b8/<b b16 b a8 b >> f4 << [b16]*4 | >> c8/<c c16 c b8 c > g4 < [c16]*4 | > d8/<d d16 d c8 d > a4 < [d16]*4 | d4/>d < c8 d > a a/d a/d a/d
+    V1: o4 [d16 f a >c]*4 | o4 [e g > c d]*3 e g > c < d | [o4 [d f a > c]*2 d < f a > c d f a > c]*2
+    V2: o2 b8/<b b16 b a8 b >> f4 << [b16]*4 | >> c8/<c c16 c b8 c > g4 < [c16]*4 | > d8/<d d16 d c8 d > a4 < [d16]*4 | d4/>d < c8 d > a a/d a/d a/d
 
-	V1: (tempo 118) [r1]*4 # wait until percussion
-	V2: (tempo 118) [r1]*6
+    V1: (tempo 118) [r1]*4 # wait until percussion
+    V2: (tempo 118) [r1]*6
 
-	V1: o4 d16 d c d f d f g d d g a d a a d8/>d | > d16 < a > d < a g a e d < a > d < a f d a f | [d f a > c]*2 < [d f a > c]*2 | o4 [d f a > c]*2 < [a f]*4
-	V2: o2 b8 < b16 b > a8/>d << b16 b8 b16 b8 > a4/>d | c8 < c16 c a8/>c < c16 c8 c16 c8 a8/>c
+    V1: o4 d16 d c d f d f g d d g a d a a d8/>d | > d16 < a > d < a g a e d < a > d < a f d a f | [d f a > c]*2 < [d f a > c]*2 | o4 [d f a > c]*2 < [a f]*4
+    V2: o2 b8 < b16 b > a8/>d << b16 b8 b16 b8 > a4/>d | c8 < c16 c a8/>c < c16 c8 c16 c8 a8/>c
 
-	V1: (volume 80) o4 [f16/>c <]*5 r [f/>c <]*2 [f/a]*3 r r [f/g]*3 | [e/g]*5 r [e/g]*3 r [e/g]*6 | [f16/>c <]*5 r [f/>c <]*2 [f/a]*3 r r [f/g]*3 | d/a a/>d < a/>d < [a/>c+ <]*3 [a/>c <]*3 [a/b_]*3 [a/b]*2 [a/d]*2
-	V2: o3 d8 < d16 d a8/>d < d16 d8 d16 d8 a4/>d | g8 < g16 g a8/>d < g16 g8 g16 g8 g4/>d | o2 b8 < b16 b > g8/b < b16 b8 b16 b8 > g4/b | > c8 < c16 c a8/>c < c16 c8 c16 c8 a4/>c
+    V1: (volume 80) o4 [f16/>c <]*5 r [f/>c <]*2 [f/a]*3 r r [f/g]*3 | [e/g]*5 r [e/g]*3 r [e/g]*6 | [f16/>c <]*5 r [f/>c <]*2 [f/a]*3 r r [f/g]*3 | d/a a/>d < a/>d < [a/>c+ <]*3 [a/>c <]*3 [a/b_]*3 [a/b]*2 [a/d]*2
+    V2: o3 d8 < d16 d a8/>d < d16 d8 d16 d8 a4/>d | g8 < g16 g a8/>d < g16 g8 g16 g8 g4/>d | o2 b8 < b16 b > g8/b < b16 b8 b16 b8 > g4/b | > c8 < c16 c a8/>c < c16 c8 c16 c8 a4/>c
 
-	V1: o5 d16/<a a > d d/a d < a > a/>d < d < [d f a > c]*2 | < c/<g g > c c/g c < g > g/>c < c [d f a > c]*2
-	V2: o3 d8 < d16 d a8/>d < [d16 d8]*2 a/>d < d16 d | b8 < b16 b > f8/b < [b16 b8]*2 > f/b < b16 b
+    V1: o5 d16/<a a > d d/a d < a > a/>d < d < [d f a > c]*2 | < c/<g g > c c/g c < g > g/>c < c [d f a > c]*2
+    V2: o3 d8 < d16 d a8/>d < [d16 d8]*2 a/>d < d16 d | b8 < b16 b > f8/b < [b16 b8]*2 > f/b < b16 b
 
-	V1: (volume 100) o5 a16/<a a > d d/a d < a > a/>d < d < [d f a > c]*2 | o4 d/a a > d d/a d f a/>d < d d f a > c d f a c
-	V2: [o3 d8 < d16 d a8/>d < [d16 d8]*2 a/>d < d16 d]*2
+    V1: (volume 100) o5 a16/<a a > d d/a d < a > a/>d < d < [d f a > c]*2 | o4 d/a a > d d/a d f a/>d < d d f a > c d f a c
+    V2: [o3 d8 < d16 d a8/>d < [d16 d8]*2 a/>d < d16 d]*2
 
-	V1: o5 d16/<a a > d d/a d < a > a/>d < d < [d f a > c]*2 | o4 g/d f d/a > c d/<g > f a > c < [d f a > c]*2
-	V2: o2 b8 < b16 b > f8/b < [b16 b8]*2 > f/b < b16 b | >> c8 < c16 c g8/>c < [c16 c8]*2 g/>c < c16 c
+    V1: o5 d16/<a a > d d/a d < a > a/>d < d < [d f a > c]*2 | o4 g/d f d/a > c d/<g > f a > c < [d f a > c]*2
+    V2: o2 b8 < b16 b > f8/b < [b16 b8]*2 > f/b < b16 b | >> c8 < c16 c g8/>c < [c16 c8]*2 g/>c < c16 c
 
-	V1: o5 d16/<a a > d d/a d < a > a/>d < d < d/<a > f a > c d/<a > f a/d > c | o5 d16/<a a > d d/a d < a > a/>d < d < d/<a > f a > c d/<a > f a/>d c
-	V2: [o3 d8 < d16 d a8/>d < [d16 d8]*2 a/>d < d16 d]*2
+    V1: o5 d16/<a a > d d/a d < a > a/>d < d < d/<a > f a > c d/<a > f a/d > c | o5 d16/<a a > d d/a d < a > a/>d < d < d/<a > f a > c d/<a > f a/>d c
+    V2: [o3 d8 < d16 d a8/>d < [d16 d8]*2 a/>d < d16 d]*2
 
-	V1: o5 d16/<a a > d d/a d < a > a/>d < d [d f a > c]*2 | o4 g/d f d/a > c d/<g > f a > c < [d f a > c]*2
-	V2: o2 b8/<b b16 b a8 b > f < b b16 b8 b16 | > c8/<c c16 c < b8 > c g c c16 c8 c16
+    V1: o5 d16/<a a > d d/a d < a > a/>d < d [d f a > c]*2 | o4 g/d f d/a > c d/<g > f a > c < [d f a > c]*2
+    V2: o2 b8/<b b16 b a8 b > f < b b16 b8 b16 | > c8/<c c16 c < b8 > c g c c16 c8 c16
 
-	V1: o5 d16/<a a > d d/a d < a > a/>d < d d f a > c d f < a > c | (volume 80) o4 d/a > d/<a > d/<a [> c+/<a]*3 [> c/<a]*3 [a/b_]*3 a/b- a/b- a/d a/d
-	V2: o2 d8/<d d16 d c8 d a d d16 d8 d16 | > g8/<g g16 g f8 g > d < g g16 g8 g16
+    V1: o5 d16/<a a > d d/a d < a > a/>d < d d f a > c d f < a > c | (volume 80) o4 d/a > d/<a > d/<a [> c+/<a]*3 [> c/<a]*3 [a/b_]*3 a/b- a/b- a/d a/d
+    V2: o2 d8/<d d16 d c8 d a d d16 d8 d16 | > g8/<g g16 g f8 g > d < g g16 g8 g16
 
-	V1: (volume 100) o4 d16/a a > d d/a d f a/>d < d [d f a > c]*2 | o5 d16/<a a > d d/a d < a > a/>d < d d f a > c d f < a > c
-	V2: o2 b8/<b b16 b a8 b >> f << b b16 b8 b16 | > c8/<c c16 c < b8 > c > g < c c16 c8 c16
+    V1: (volume 100) o4 d16/a a > d d/a d f a/>d < d [d f a > c]*2 | o5 d16/<a a > d d/a d < a > a/>d < d d f a > c d f < a > c
+    V2: o2 b8/<b b16 b a8 b >> f << b b16 b8 b16 | > c8/<c c16 c < b8 > c > g < c c16 c8 c16
 
-	V1: o4 d16/a a > d d/a d f a/>d < d [d f a > c]*2 | o4 d16/a a > d d/a d f a/>d < d d f a g/d a > c < a/e > d
-	V2: o2 d8/<d d16 d c8 d > a < d d16 d8 d16 | d4/>d < c8 d > a [a/d]*3
+    V1: o4 d16/a a > d d/a d f a/>d < d [d f a > c]*2 | o4 d16/a a > d d/a d f a/>d < d d f a g/d a > c < a/e > d
+    V2: o2 d8/<d d16 d c8 d > a < d d16 d8 d16 | d4/>d < c8 d > a [a/d]*3
+
+    V0: [r1]*4
+    o5 [(volume 70) a16/d (volume 100) d (volume 70) f/d (volume 100) < a >]*2 (volume 70) a/c (volume 100) c (volume 70) e/c (volume 100) < a > (volume 70) a/c (volume 100) c e c | (volume 70) g/c (volume 100) < g > (volume 70) e/c (volume 100) c (volume 70) g/c (volume 100) c (volume 70) e/c (volume 100) < g > [g/e c e/<g g >]*2
+    o4 b16/f f > d/<b b > f/d d b/f f > d/<b b > f/d d g/d d b/g g | a c e < a > c < e a c e < a > c < e a c e < a
+    o6 a16/f d f < a > d < f a d a c e < a > c < e a c | >> a/e c e < a > c < e a c > b/g d g < b > g < g > d < b
+    o4 b16 f > d < b > f d b f > d < b > f d b f > d < b | o5 c < g > e c g e > c < g > e c g e > c < g > e c
+    o5 [(volume 70) a16/d (volume 100) d (volume 70) f/d (volume 100) < a >]*2 (volume 70) a/c (volume 100) c (volume 70) e/c (volume 100) < a > (volume 70) a/c (volume 100) c e c | (volume 70) g/c (volume 100) < g > (volume 70) e/c (volume 100) c (volume 70) g/c (volume 100) c (volume 70) e/c (volume 100) < g > [g/e c e/<g g >]*2
+    o4 b16/f f > d/<b b > f/d d b/f f > d/<b b > f/d d g/d d b/g g | a c e < a > c < e a c e < a > c < e a c e < a
+    o6 a16/f d f < a > d < f a d a c e < a > c < e a c | >> a/e c e < a > c < e a c > b/g d g < b > g < g > d < b
+    o4 b16 f > d < b > f d b f > d < b > f d b f > d < b | o5 c < g > e c g e > c < g > e c g e > c < g > e c
+
+    V1: (tempo 125) (volume 80) o4 [d16 f a >c]*4 | o4 [e g > c d]*3 e g > c < d | o4 [d f a > c]*2 d < f a > c d f a > c | o4 [g b > d f g b > d << f]*2
+    V2: (tempo 125) (volume 80) o2 b8/<b b16 b a8 b > f4 < [b16]*4 | >> c8/<c c16 c b8 c g4 [c16]*4 | > d8/<d d16 d c8 d a4 [d16]*4 | g8/<g g16 g f8 g > d4 < [g16]*4
+
+    V1: o4 [[a16/>d <]*5 r]*2 r [a/>d <]*3 > | [[c/g]*5 r]*2 r [c/g]*3 | [[a16/>d <]*5 r]*2 r [a/>d <]*3 | [a/>d <]*5 r [a/>d <]*3 r [r a/>d < a/>d <]*2
+    V2: o2 b8/<b b16 b a8 b >> f4 << [b16]*4 | >> c8/<c c16 c b8 c > g4 < [c16]*4 | > d8/<d d16 d c8 d > a4 < [d16]*4 | d4/>d < c8 d > a a/d a/d a/d
+
+midi-sawtooth "saw1": (volume 60) (quant 100) (tempo 118)
+    @sawtoothsolostart
+    V0:
+    o3 g2.~8 a-8 | a_2. >> r16 [c16]*3 | (volume 100) < g4 g+8 a r16 f8 r16 f f r8 | g4 f16 e d8 r16 d8 r16 d d r8
+    o4 [f16]*4 e d r d a r [a a r]*2 | e e e e8 g16 g+ a8 r16 [a a r]*2
+    o4 [f16]*5 r a8 r > d16 d r d d d | < a a a r a a- g8 r g16 g r g g g
+    o4 [f16]*4 e d r d a r [a a r]*2 | e e e e8 g16 g+ a8 r16 a a a a r a
+    %sawtoothsoloend
+    (tempo 125)
+    [r1]*8
+
+    V1: (tempo 118) (quant 70) [r1]*4 # wait until percussion
+    V2: (tempo 118) (quant 70) [r1]*6
+
+    V1: o4 d16 d c d f d f g d d g a d a a d8/>d | > d16 < a > d < a g a e d < a > d < a f d a f | [d f a > c]*2 < [d f a > c]*2 | o4 [d f a > c]*2 < [a f]*4
+    V2: o2 b8 < b16 b > a8/>d << b16 b8 b16 b8 > a4/>d | c8 < c16 c a8/>c < c16 c8 c16 c8 a8/>c
+
+    V1: (volume 80) o4 [f16/>c <]*5 r [f/>c <]*2 [f/a]*3 r r [f/g]*3 | [e/g]*5 r [e/g]*3 r [e/g]*6 | [f16/>c <]*5 r [f/>c <]*2 [f/a]*3 r r [f/g]*3 | d/a a/>d < a/>d < [a/>c+ <]*3 [a/>c <]*3 [a/b_]*3 [a/b]*2 [a/d]*2
+    V2: o3 d8 < d16 d a8/>d < d16 d8 d16 d8 a4/>d | g8 < g16 g a8/>d < g16 g8 g16 g8 g4/>d | o2 b8 < b16 b > g8/b < b16 b8 b16 b8 > g4/b | > c8 < c16 c a8/>c < c16 c8 c16 c8 a4/>c
+
+    V1: o5 d16/<a a > d d/a d < a > a/>d < d < [d f a > c]*2 | < c/<g g > c c/g c < g > g/>c < c [d f a > c]*2
+    V2: o3 d8 < d16 d a8/>d < [d16 d8]*2 a/>d < d16 d | b8 < b16 b > f8/b < [b16 b8]*2 > f/b < b16 b
+
+    V1: (volume 100) o5 a16/<a a > d d/a d < a > a/>d < d < [d f a > c]*2 | o4 d/a a > d d/a d f a/>d < d d f a > c d f a c
+    V2: [o3 d8 < d16 d a8/>d < [d16 d8]*2 a/>d < d16 d]*2
+
+    V1: o5 d16/<a a > d d/a d < a > a/>d < d < [d f a > c]*2 | o4 g/d f d/a > c d/<g > f a > c < [d f a > c]*2
+    V2: o2 b8 < b16 b > f8/b < [b16 b8]*2 > f/b < b16 b | >> c8 < c16 c g8/>c < [c16 c8]*2 g/>c < c16 c
+
+    V1: o5 d16/<a a > d d/a d < a > a/>d < d < d/<a > f a > c d/<a > f a/d > c | o5 d16/<a a > d d/a d < a > a/>d < d < d/<a > f a > c d/<a > f a/>d c
+    V2: [o3 d8 < d16 d a8/>d < [d16 d8]*2 a/>d < d16 d]*2
+
+    V0:
+
+    V1: (tempo 118) (quant 70) (volume 80) [[o4 [d16 f a > c]*4]*2 o4 [d f a > c]*2 d < f a > c d f a > c o4 [g b > d f g b > d << f]*2]*2 o4 [d16 f a > c]*4
+    V2: (tempo 118) (quant 100) o2 d1 c < b > c d g < b g
+
+midi-square-lead "square1": (volume 100) (quant 100)
+    @sawtoothsoloend (tempo 125)
+    o4 d4 c16 d16 a4. g16 a8. | g4 f8 e4. f4 | e f8 d2 r8 | g a4 > c4. < a4 | > d2~8. c16 d8 e | c2. c16 d8. | d1 | < d
+    (tempo 118)
+    o4 [d16 d c d f d f g d d g a d a a > c | < [> d/<a]*3 [> c+/<a]*3 [> c/<a]*3 [b_/a]*3 b/a b/a a/d a/d]*2
+    o5 d4. < a8~2 | b4. a f4 | g4. a8~2 | f4. g e4 | d4. a8~2 | g4. a f4 | b4. a a8 > c < | g4. a f4 | d2. g8 a | g1
+    (volume 60)
+    o5 [e16/a]*5 r e/a e/a [e/g]*5 r e/a e/a | [e/a]*5 r e/a e/a e/g r e/g e/g r r a/e e/c
+    (volume 80)
+    o4 [a16/d]*5 r a/d d/f [e/g]*3 r r [e/g]*3 | [c/g]*5 r [c/g]*3 r c/g c/g r r e/g e/g
+    o5 [e16/a]*5 r e/a e/a [e/g]*5 r e/g e/a | [e/a]*5 r e/a e/a e/g r e/g e/g r r e/g e/g
+    # coda
+    o5 d4~8 < a2~8 | b4. a f4 | g4. a2~8 | f4. g e4 | d4. a2~8 | g4. a4. f4 | b4. a2~8 | g4. a f4 | b4. a2~8 | c8 e4 g2
 
 midi-percussion:
-	@percussion
-	(tempo 125)
-	o1 [b_4 > d+ <]*16
-	(tempo 118)
-	o1 [b_4 > d+ <]*76
+    @percussion
+    (tempo 132)
+    o1 [b_4 > d+ <]*8   
+    (tempo 125)
+    o1 [b_4 > d+ <]*16
+    (tempo 118)
+    o1 [b_4 > d+ <]*96
+    (tempo 125)
+    o1 [b_4 > d+ <]*16
+    (tempo 118)
+    o1 [b_4 > d+ <]*40
